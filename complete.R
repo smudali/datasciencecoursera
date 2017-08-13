@@ -1,3 +1,4 @@
+# Author: Sugath Mudali, Coursera R Programming class
 complete <- function(directory, id = 1:332) {
   # List of files to read monitor data
   files <- list.files(directory, full.names = TRUE)
