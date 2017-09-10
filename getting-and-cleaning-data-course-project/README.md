@@ -40,7 +40,19 @@ The `run_analysis.R` script was built and tested using R version 3.4.1 (2017-06-
 
 ```R
 source("run_analysis.R")
-write_tiny_data()
+x <- write_tiny_data()
 ```
 
-If you run the script for the first time, it will download the HAR dataset and unpack it in the current directory. All the required input files are under the directory 'UCI HAR Dataset' directory. The script wouldn't download and unzip if it detects 'UCI HAR Dataset' directory in the current directory. The tidy data file ('tidy_data.txt') will be create in the current directory
+If you run the script for the first time, it will download the HAR dataset and unpack it in the current directory. All the required input files are under the directory `UCI HAR Dataset` directory. The script wouldn't download and unzip if it detects `UCI HAR Dataset` directory in the current directory. The tidy data file (`tidy_data.txt`) will be create in the current directory.
+
+In addition to the tidy data file, the script also returns a 'data.frame' (refers to as x above) with 180 observations of 81 variables (see Code book for more details)
+
+#### Messages
+The following messages are displayed to the console:
+- [1] "Downloading ... please wait" - downloading in progress
+- [1] "Unzipping the downloaded file" - `UCI HAR Dataset` directory was missing and the script unzipped a previosuly downloaded dataset
+- [1] "Using previously downloaded data" - displayed to indicate that the script is using a previosuly downloaded dataset
+- [1] "Tidy data set file created: tidy.txt at 2017-09-10 23:34:49" - confirmation that the tidy_data.txt was cerated sucessfully
+
+### Notes
+If 
