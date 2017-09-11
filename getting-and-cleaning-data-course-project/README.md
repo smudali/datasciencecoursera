@@ -4,10 +4,10 @@ This repository contains my solution to the Coursera Getting And Cleaning Data C
 
 This repository contains the following files:
 
-- *README.md*, this file, provides an overview of the data set and how it was created
-- *tidy_data.txt*, a tidy data set
-- *CodeBook.md*, a code book that describes the variables, the data, and any transformations or work that have performed to clean up the data
-- *run_analysis.R*, the R script to create the data set (see the [Creating the data set](#creating-data-set) section below) 
+- *README.md* - this file, provides an overview of the data set and how it was created
+- *tidy_data.txt* - a tidy data set
+- *CodeBook.md* - a code book that describes the variables, the data, and any transformations or work that have performed to clean up the data
+- *run_analysis.R* - the R script to create the data set (see the [Creating the data set](#creating-data-set) section below) 
 
 ## Background (from the Coursera Course Project)
 
@@ -23,9 +23,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 The R script *run_analysis.R* performs the following steps (see the Code book for details about data, as well as the comments in the script itself):
 
-- Download the Human Activity Recognition (HAR) dataset only for the condition:
--- No *UCI HAR Dataset* directory
--- No *dataset.zip* file in the current directory 
+- Download the Human Activity Recognition (HAR) dataset only for the below **condition**:
+  - No *UCI HAR Dataset* directory in the current directory
+  - No *dataset.zip* file in the current directory 
 - Unzip the downloaded file (*dataset.zip*)
 - Read both training and data sets
 - Extract only the mean and standard deviation features for each measurement
