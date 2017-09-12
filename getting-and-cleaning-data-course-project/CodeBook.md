@@ -1,15 +1,13 @@
 # Codebook
 
-The data set that this code book relates to the *tidy_data.txt* file of this repository. See the *README.md* file of this repository for background information on this data set.
+The data set that this code book relates to the *tidy_data.txt* file of this repository. See the *README.md* file for background information on this data set.
 
-The structure of the data set is described in the Data section, its variables are listed in the Variables section, and
+The structure of the data set is described in the [Data](#data) section, its variables are listed in the Variables section, and
 the transformations that were carried out to obtain the data set based on the source data are presented in the Transformations section.
 
-There are a total of 68 columns in this data set. Each row contains data related to 1 activity for a certain person (subject).
+The dataset contains data for 30 persons, each one was tracked for 6 activities, so there are a total of 180 observations. There are a total of 68 columns in this data set. Each row contains data related to 1 activity for a certain person (subject). Each row contains data for 66 variables, each one being the average of the raw data for the corresponding person/activity combination.
 
-The dataset contains data for 30 persons, each one was tracked for 6 activities, so there are a total of 180 observations.
-
-Each row contains data for 66 variables, each one being the average of the raw data for the corresponding person/activity combination.
+# Data <a name="data"></a>
 
 ## Identifiers
 
@@ -24,7 +22,7 @@ You can identify their meaning by examining how each variable is named:
 - Variables starting with "FreqDomain" contains data after applying the Fast Fourier Transform.
 - Variables starting with "TimeDomain" contains time domain signals.
 - Variables ending with "Mean" or "Mean/-X/-Y/-Z" contains the mean data for 3-axial signals in the X, Y and Z directions
-- Variables ending with "Std" or "Std/-X/-Y/-Z" contains the standard deviation data for 3-axial signals in the X, Y and Z directions
+- Variables ending with "Std" or "Std/-X/-Y/-Z" contains the mean of the standard deviation data for 3-axial signals in the X, Y and Z directions
 
 * TimeDomainBodyAcc-Mean-X
 * TimeDomainBodyAcc-Mean-Y
