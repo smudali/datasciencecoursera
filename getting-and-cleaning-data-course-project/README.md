@@ -50,7 +50,7 @@ If you run the script for the first time, it will download the HAR dataset and u
 In addition to the tidy data file, the script also returns a 'data.frame' (refers to as x above in the code snippet) with 180 observations of 68 features (see Code book for more details)
 
 #### Messages
-The following messages are displayed to the console
+The following messages are displayed to the console:
 
 [1] "Downloading ... please wait" - downloading in progress
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
