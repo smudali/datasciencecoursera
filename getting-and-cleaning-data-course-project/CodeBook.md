@@ -11,18 +11,16 @@ The dataset contains data for 30 persons, each one was tracked for 6 activities,
 
 ## Identifiers
 
-* SubjectId - Factor with 30 levels (representing the person who has the data) "1","2","3","4", ....
-* ActivityName - Factor with 6 levels WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+* subject - Factor with 30 levels (representing the person who has the data) "1","2","3","4", ....
+* activity - Factor with 6 levels WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
 ## Variables
-There are a lot of variables each one measuring one kind of data. They are all listed bellow.
+Each variable contains a single measurement as listed below. Variables are named using the below pattern:
 
-You can identify their meaning by examining how each variable is named:
-
-- Variables starting with "FreqDomain" contains data after applying the Fast Fourier Transform.
-- Variables starting with "TimeDomain" contains time domain signals.
-- Variables ending with "Mean" or "Mean/-X/-Y/-Z" contains the mean data for 3-axial signals in the X, Y and Z directions
-- Variables ending with "Std" or "Std/-X/-Y/-Z" contains the mean of the standard deviation data for 3-axial signals in the X, Y and Z directions
+- variables starting with "FreqDomain" contains data after applying the Fast Fourier Transform.
+- variables starting with "TimeDomain" contains time domain signals.
+- variables ending with "Mean" or "Mean/-X/-Y/-Z" contains the mean data for 3-axial signals in the X, Y and Z directions
+- variables ending with "Std" or "Std/-X/-Y/-Z" contains the mean of the standard deviation data for 3-axial signals in the X, Y and Z directions
 
 * TimeDomainBodyAcc-Mean-X
 * TimeDomainBodyAcc-Mean-Y
