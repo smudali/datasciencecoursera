@@ -58,7 +58,7 @@ write_tiny_data <- function() {
   features.wanted.names <- gsub('std', 'Std', features.wanted.names)
   features.wanted.names <- gsub('[()]', '', features.wanted.names)
   
-  # Add 'time'  to names start with t and 'freq' for names starting with F
+  # Add 'TimeDomain'  to names start with t and 'FreqDomain' for names starting with f
   features.wanted.names <- gsub("^t", "TimeDomain", features.wanted.names)
   features.wanted.names <- gsub("^f", "FreqDomain", features.wanted.names)
   
