@@ -17,10 +17,10 @@ The dataset contains data for 30 persons, each one was tracked for 6 activities,
 ## Variables
 Each variable contains a single measurement as listed below. Variables are named using the below pattern:
 
-- variables starting with "FreqDomain" contains data after applying the Fast Fourier Transform.
-- variables starting with "TimeDomain" contains time domain signals.
-- variables ending with "Mean" or "Mean/-X/-Y/-Z" contains the mean data for 3-axial signals in the X, Y and Z directions
-- variables ending with "Std" or "Std/-X/-Y/-Z" contains the mean of the standard deviation data for 3-axial signals in the X, Y and Z directions
+1. variables starting with "FreqDomain" contains data after applying the Fast Fourier Transform.
+2. variables starting with "TimeDomain" contains time domain signals.
+3. variables ending with "Mean" or "Mean/-X/-Y/-Z" contains the mean data for 3-axial signals in the X, Y and Z directions
+4. variables ending with "Std" or "Std/-X/-Y/-Z" contains the mean of the standard deviation data for 3-axial signals in the X, Y and Z directions
 
 * TimeDomainBodyAcc-Mean-X
 * TimeDomainBodyAcc-Mean-Y
