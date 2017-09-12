@@ -2,25 +2,24 @@
 
 The data set that this code book relates to the *tidy_data.txt* file of this repository. See the *README.md* file for background information on this data set.
 
-The structure of the data set is described in the [Data](#data) section, its variables are listed in the Variables section, and
-the transformations that were carried out to obtain the data set based on the source data are presented in the Transformations section.
+The structure of the data set is described in the [Data](#data) section. Transformations that were carried out to obtain the data set based on the source data are presented under the Transformations section.
 
-The dataset contains data for 30 persons, each one was tracked for 6 activities, so there are a total of 180 observations. There are a total of 68 columns in this data set. Each row contains data related to 1 activity for a certain person (subject). Each row contains data for 66 variables, each one being the average of the raw data for the corresponding person/activity combination.
+The dataset contains data for 30 persons, each one was tracked for 6 activities, so there are a total of 180 observations. There are a total of 68 columns in this data set. Each row contains data related to 1 activity for a certain person (subject). Each row contains data for 66 variables, each one being the average (mean) of the raw data for the corresponding person/activity combination.
 
 # Data <a name="data"></a>
 
 ## Identifiers
 
-* subject - Factor with 30 levels (representing the person who has the data) "1","2","3","4", ....
+* subject - Factor with 30 levels (representing a person) "1","2","3","4", ....
 * activity - Factor with 6 levels WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
-## Variables
-Each variable contains a single measurement as listed below. Variables are named using the below pattern:
+## Features
+Each feature contains a single measurement as listed below. Naming pattern for features:
 
-1. variables starting with "FreqDomain" contains data after applying the Fast Fourier Transform.
-2. variables starting with "TimeDomain" contains time domain signals.
-3. variables ending with "Mean" or "Mean/-X/-Y/-Z" contains the mean data for 3-axial signals in the X, Y and Z directions
-4. variables ending with "Std" or "Std/-X/-Y/-Z" contains the mean of the standard deviation data for 3-axial signals in the X, Y and Z directions
+1. features starting with "FreqDomain" contains data after applying the Fast Fourier Transform
+2. features starting with "TimeDomain" contains time domain signals
+3. features ending with "Mean" or "Mean/-X/-Y/-Z" contains the mean data for 3-axial signals in the X, Y and Z directions
+4. features ending with "Std" or "Std/-X/-Y/-Z" contains the mean of the standard deviation data for 3-axial signals in the X, Y and Z directions
 
 * TimeDomainBodyAcc-Mean-X
 * TimeDomainBodyAcc-Mean-Y
@@ -88,3 +87,13 @@ Each variable contains a single measurement as listed below. Variables are named
 * FreqDomainBodyGyroMag-Std
 * FreqDomainBodyGyroJerkMag-Mean
 * FreqDomainBodyGyroJerkMag-Std
+
+## Transformation
+Follwong transformations have been performed to clean the data:
+
+* Only included the features containing either mean() or std() in feature names
+* Converted names *mean* to *Mean* and *std* to *Std*
+* Removed '()' from names; for example, Mean() became Mean and Std() became Std
+* Features starting with letter 't' converted to TimeDomain, for example, the feature name *tBodyAcc-mean()-X* became *TimeDomainBodyAcc-Mean-X*
+* Features starting with letter 'f' converted to FreqDomain, for example, the feature name *fBodyAcc-mean()-X* became *FreqDomainBodyAcc-Mean-X*
+* Feature names with *BodyBody* reduced to *Body*, for example, fBodyBodyAccJerkMag-std() became *FreqDomainBodyAccJerkMag-Std*
